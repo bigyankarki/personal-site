@@ -1,0 +1,4 @@
+Django==1.11.7
+pytz==2017.3
+style==1.1.0
+update==0.0.1
