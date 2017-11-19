@@ -1,0 +1,97 @@
+body {
+      background-color: white;
+      font: 400 15px Lato, sans-serif;
+      color: black !important;
+      line-height: 1.8;
+  }
+#home, #contact{
+      background-color: white;
+      color: black;
+      margin-top: 140px;
+      padding: 100px 30px 100px 30px;
+      font-family: Montserrat, sans-serif;
+  }
+#contact p {
+      font-size: 80px;
+    }
+
+#contact a {
+    letter-spacing: 50px;
+    color: inherit;
+  }
+
+#about, #portfolio {
+    margin-top:82px;
+    color: black;
+    }
+
+.each-image{
+    margin-bottom: 30px;
+}
+
+.each-image:hover {
+      opacity: 0.8;
+    }
+
+  .navbar {
+      margin-bottom: 0;
+      padding: 10px 10px;
+      background-color: white;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+
+  .navbar-brand{
+    font-size: 25px;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      padding: 25px 25px;
+      color: black !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+
+  i {
+  display: inline-block;
+  box-shadow: 0px 0px 0px #888;
+  }
+
+  footer{
+    position: absolute;
+   border-top: 1px solid black;
+  }
+
+/* for blinking cursor */
+.typed-cursor{
+  color: black;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

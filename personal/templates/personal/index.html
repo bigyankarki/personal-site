@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Bigyan Karki</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Programmer. AI Enthusiast">
+  <meta name="author" content="Bigyan Karki">
+
+    {% load staticfiles %}
+  <!-- Bootstrap Core -->
+  <link rel="stylesheet" href="{% static 'personal/css/bootstrap.css' %}">
+
+  <!-- Custom CSS for the page -->
+  <link rel="stylesheet" type="text/css" href="{% static 'personal/css/style.css' %}">
+
+  <!-- Core fonts to be used -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">BIGYAN KARKI</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">HOME</a></li>
+        <li><a href="/about">ABOUT ME</a></li>
+        <li><a href="/portfolio">PORTFOLIO</a></li>
+        <li><a href="/contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Container (About Section) -->
+<div class="container">
+  {% block content%}
+  {% endblock %}
+</div>
+
+<!-- footer Section -->
+<footer class="container navbar-fixed-bottom">
+  <p>Design and Copyright &copy Bigyan Karki | 2017</p>
+</footer>
+
+<!-- Core JS for the page -->
+<script src="{% static 'personal/js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'personal/js/bootstrap.min.js' %}"></script>
+{% block js %}
+
+{% endblock %}
+
+
+</body>
+</html>

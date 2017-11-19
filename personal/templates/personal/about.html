@@ -1,0 +1,53 @@
+{% extends "personal/index.html"%}
+
+{% block content %}
+
+  <div id="about" class="row">
+      <div id="about-left" class="col-lg-6 col-md-12 col-sm 12 text-justify">
+          <p>
+            Hello, wonderful soul! I am a sophomore at Caldwell University, NJ. With a deep interest in Artificial Intelligence and Machine Learning, I am pursuing Computer Science and mathematics as my majors.
+             Since childhood, numbers had always been my comfort zone. However, I became fascinated by computers when I realized that it can fully harness the beauty of Mathematics.
+          </p>
+          <p>
+            Today, running gradient descent through my life curve to find the line of best fit, I feel proud to have rubbed shoulder with great inspiring colleagues and professors and stumbled into many areas of
+             arts and sciences that have truly enriched my experience as a Human Being. I truly believe, we, Human Being, have the potential to settle on Mars, harness Dark Energy, solve Millenium Problems, and
+             befriend aliens by traveling through wormholes. I wish to be a small part of this human endeavour.
+          </p>
+          <p>
+            Also, I find comfort in reading books, viewing rain through window pane, sipping a cup of coffee in morning, strumming acoustic guitar, playing random songs in unheard languages, googling cat memes,
+            petting neighbour's dog, watching Alan Turing fixing his machine, watering a vase of flower in my study table, laughing in repeated jokes, crying listening to stories, and most importantly, passing
+            unconditional love to people. Let Maya rule the world!
+          </p>
+
+            <p>Staying hungry. Staying foolish.</p>
+
+
+      </div>
+      <div id="about-right" class="col-lg-6 col-md-0 col-sm-0">
+        <div id="instafeed"></div>
+      </div>
+
+  </div>
+{% endblock %}
+
+
+{% block js %}
+{% load staticfiles %}
+<script src="{% static 'personal/js/instaFeed.js' %}"></script>
+
+{% verbatim %}
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        sortBy: 'most-liked',
+        userId: '1529117750',
+        accessToken: '1529117750.1677ed0.ea085d23154842e9a4afd31045d02698',
+        clientId: 'cfc71f6ee950443cbdc2d95bb587f39d',
+        template: '<div class="col-lg-4 each-image"><a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a></div>',
+        limit: 9
+          });
+    feed.run();
+</script>
+{% endverbatim %}
+
+{% endblock %}

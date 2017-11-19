@@ -1,0 +1,22 @@
+{% extends "personal/index.html"%}
+
+{% block content %}
+<div id="home" class="jumbotron text-center">
+  <h1><span class="typed"></span></h1>
+  <p>Cogito Ergo Sum</p>
+</div>
+{% endblock %}
+
+{% block js %}
+{% load staticfiles %}
+<script src="{% static 'personal/js/typed.js' %}"></script>
+<script>
+//for typed.js
+$(function(){
+        $(".typed").typed({
+            strings: ["Hello World. ", "Wear those sneakers", "and", "travel with me", "in the journey", "of my life."],
+            typeSpeed: 80
+        });
+    });
+</script>
+{% endblock %}
